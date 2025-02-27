@@ -14,3 +14,8 @@ Add the remote repository: Add the remote repository URL to your local Git repos
 
 git remote add origin https://github.com/jacquesonline/jiraendpoint.git
 git push -u origin master
+
+curl --request GET \
+--url 'https://yoursitename.atlassian.net/rest/api/3/filter/search?filterName=YourFilterName' \
+--user 'youremail@mail.com:yourapitoken' \
+--header 'Accept: application/json'
